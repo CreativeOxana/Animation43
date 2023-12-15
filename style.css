@@ -19,6 +19,7 @@ body {
   justify-content: center;
   text-align: center;
   animation: bg 4s linear infinite 1s;
+  overflow: hidden;
 }
 
 .slider-container h1 {
