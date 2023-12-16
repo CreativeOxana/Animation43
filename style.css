@@ -25,15 +25,25 @@ body {
 .slider-container h1 {
   margin-bottom: 20px;
   font-size: 64px;
+  text-shadow: 0 0 10px #423939;
 }
 
 .contact {
-  padding: 10px 80px;
-  border: 1px solid #fff;
+  padding: 15px 120px;
+  --border: 1px solid #fff;
   display: inline-block;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 3px #fff;
+}
+
+.contact:hover {
+  --border-color: #e74e3c;
+  background-color: #f8e0e0;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff;
+  text-shadow: 0 0 3px #423939;
 }
 
 .desc {
@@ -46,6 +56,7 @@ body {
   left: 0;
   min-width: 100%;
   min-height: 100%;
+  z-index: -1;
 }
 
 @keyframes bg {
